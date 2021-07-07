@@ -1,10 +1,10 @@
-package com.siuze.test04.mine;
+package com.siuze.task04.mine2;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Allocator {
-    private List<Account> accountList = new ArrayList<>();
+    private static final List<Account> accountList = new ArrayList<>();
 
     synchronized public boolean add(Account from, Account to) {
         if (accountList.contains(from) || accountList.contains(to)) {
@@ -16,18 +16,17 @@ public class Allocator {
         }
     }
 
-    synchronized void clean(Account from, Account to) {
+    synchronized public void clean(Account from, Account to) {
         accountList.remove(from);
         accountList.remove(to);
     }
 
-
-    private static class SingleTonHolder {
-        private static Allocator Intance = new Allocator();
+    public static Allocator getInstance() {
+        return SingleInstance.Instance;
     }
 
-    public static Allocator getInstance() {
-        return SingleTonHolder.Intance;
+    private static class SingleInstance {
+        private static final Allocator Instance = new Allocator();
     }
 
 }

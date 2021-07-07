@@ -1,4 +1,4 @@
-package com.siuze.test02;
+package com.siuze.task02;
 
 /**
  * @author <a href="mailto:little@163.com">little</a>

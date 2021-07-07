@@ -1,4 +1,4 @@
-package com.siuze.test04;
+package com.siuze.task04;
 
 public class DeadLock {
     public static String obj1 = "obj1";

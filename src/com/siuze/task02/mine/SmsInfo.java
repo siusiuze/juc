@@ -1,4 +1,4 @@
-package com.siuze.test02.mine;
+package com.siuze.task02.mine;
 
 public final  class SmsInfo {
 

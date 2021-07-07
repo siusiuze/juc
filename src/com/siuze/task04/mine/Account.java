@@ -1,4 +1,4 @@
-package com.siuze.test04.mine;
+package com.siuze.task04.mine;
 
 public class Account {
     private Allocator allocator = Allocator.getInstance();

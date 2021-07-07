@@ -1,4 +1,4 @@
-package com.siuze.test04.mine2;
+package com.siuze.task04.mine2;
 
 public class Account {
     private int balance;

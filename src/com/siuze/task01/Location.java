@@ -1,4 +1,4 @@
-package com.siuze.test01;
+package com.siuze.task01;
 
 public final class Location {
 

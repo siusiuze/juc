@@ -1,4 +1,4 @@
-package com.siuze.test02;
+package com.siuze.task02;
 
 import java.util.Collections;
 import java.util.HashMap;
